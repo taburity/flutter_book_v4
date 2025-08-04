@@ -33,7 +33,8 @@ class TasksListView extends StatelessWidget {
                 final parts = task.dueDate!.split(",");
                 final dueDate = DateTime(int.parse(parts[0]),
                     int.parse(parts[1]), int.parse(parts[2]));
-                sDueDate = DateFormat.yMMMMd("en_US").format(dueDate.toLocal());
+                final localeName = Localizations.localeOf(context).toString();
+                sDueDate = DateFormat.yMMMMd(localeName).format(dueDate.toLocal());
               }
               return Slidable(
                 key: ValueKey(task.id),

@@ -37,7 +37,8 @@ class AppointmentsListView extends StatelessWidget {
               vm.startEditing();
               DateTime now = DateTime.now();
               vm.entityBeingEdited!.apptDate = "${now.year},${now.month},${now.day}";
-              vm.setChosenDate(DateFormat.yMMMMd("en_US").format(now.toLocal()));
+              final localeName = Localizations.localeOf(context).toString();
+              vm.setChosenDate(DateFormat.yMMMMd(localeName).format(now.toLocal()));
               vm.setApptTime('');
               vm.setStackIndex(1);
             },
@@ -48,6 +49,7 @@ class AppointmentsListView extends StatelessWidget {
                 child: Container(
                   margin: EdgeInsets.symmetric(horizontal: 10),
                   child: CalendarCarousel<Event>(
+                    locale: Localizations.localeOf(context).toString(),
                     thisMonthDayBorderColor: Colors.grey,
                     daysHaveCircularBorder: false,
                     markedDatesMap: markedDates,
@@ -75,7 +77,7 @@ class AppointmentsListView extends StatelessWidget {
             child: Column(
               children: [
                 Text(
-                  DateFormat.yMMMMd("en_US").format(date.toLocal()),
+                  DateFormat.yMMMMd(Localizations.localeOf(context).toString()).format(date.toLocal()),
                   textAlign: TextAlign.center,
                   style: TextStyle(color: Theme.of(context).colorScheme.primary, fontSize: 24),
                 ),
@@ -140,7 +142,8 @@ class AppointmentsListView extends StatelessWidget {
       List dateParts = vm.entityBeingEdited!.apptDate.split(",");
       DateTime apptDate = DateTime(
           int.parse(dateParts[0]), int.parse(dateParts[1]), int.parse(dateParts[2]));
-      vm.setChosenDate(DateFormat.yMMMMd("en_US").format(apptDate.toLocal()));
+      final localeName = Localizations.localeOf(context).toString();
+      vm.setChosenDate(DateFormat.yMMMMd(localeName).format(apptDate.toLocal()));
     }
     if (vm.entityBeingEdited!.apptTime == null) {
       vm.setApptTime('');

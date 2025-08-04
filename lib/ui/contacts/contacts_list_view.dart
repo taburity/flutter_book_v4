@@ -85,7 +85,8 @@ class ContactsListView extends StatelessWidget {
     } else {
       final parts = vm.entityBeingEdited!.birthday!.split(",");
       final birthday = DateTime(int.parse(parts[0]), int.parse(parts[1]), int.parse(parts[2]));
-      vm.setChosenDate(DateFormat.yMMMMd("en_US").format(birthday.toLocal()));
+      final localeName = Localizations.localeOf(context).toString();
+      vm.setChosenDate(DateFormat.yMMMMd(localeName).format(birthday.toLocal()));
     }
     vm.setStackIndex(1);
   }
