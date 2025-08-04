@@ -1,0 +1,10 @@
+{
+  "title": "AgendaFlutter",
+  "appt_title": "Compromissos",
+  "contacts_title": "Contatos",
+  "notes_title": "Notas",
+  "tasks_title": "Tarefas",
+  "save_msg": "{item} salvo",
+  "delete_msg": "{item} apagado"
+}
+

@@ -1,0 +1,9 @@
+{
+  "title": "FlutterBook",
+  "appt_title": "Appointments",
+  "contacts_title": "Contacts",
+  "notes_title": "Notes",
+  "tasks_title": "Tasks",
+  "save_msg": "{item} saved",
+  "delete_msg": "{item} deleted"
+}
