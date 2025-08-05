@@ -49,7 +49,7 @@ class AppointmentsListView extends StatelessWidget {
                 child: Container(
                   margin: EdgeInsets.symmetric(horizontal: 10),
                   child: CalendarCarousel<Event>(
-                    locale: Localizations.localeOf(context).toString(),
+                    locale: Localizations.localeOf(context).languageCode,
                     thisMonthDayBorderColor: Colors.grey,
                     daysHaveCircularBorder: false,
                     markedDatesMap: markedDates,
