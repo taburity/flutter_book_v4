@@ -24,17 +24,26 @@ class NotesEntryView extends StatelessWidget {
             padding: EdgeInsets.symmetric(horizontal: 10),
             child: Row(
               children: [
-                ElevatedButton(
-                  child: Text("Cancel"),
-                  onPressed: () {
-                    FocusScope.of(context).unfocus();
-                    vm.setStackIndex(0);
-                  },
+              Semantics(
+                label: 'Cancelar e voltar',
+                button: true,
+                child:
+                  ElevatedButton(
+                      child: Text("Cancel"),
+                      onPressed: () {
+                        FocusScope.of(context).unfocus();
+                        vm.setStackIndex(0);
+                      },
+                  ),
                 ),
                 Spacer(),
-                ElevatedButton(
-                  child: Text("Save"),
-                  onPressed: () => _save(context, vm),
+                Semantics(
+                  label: "Salvar nota",
+                  button: true,
+                  child: ElevatedButton(
+                    child: Text("Save"),
+                    onPressed: () => _save(context, vm),
+                  ),
                 ),
               ],
             ),
