@@ -1,10 +1,17 @@
 {
+  "greeting": "Bem-vindo, {user}!",
   "title": "AgendaFlutter",
   "appt_title": "Compromissos",
   "contacts_title": "Contatos",
   "notes_title": "Notas",
   "tasks_title": "Tarefas",
-  "save_msg": "{item} salvo",
-  "delete_msg": "{item} apagado"
+  "appt_save_msg": "Compromisso salvo",
+  "contact_save_msg": "Contato salvo",
+  "note_save_msg": "Nota salva",
+  "task_save_msg": "Tarefa salva",
+  "appt_delete_msg": "Compromisso apagado",
+  "contact_delete_msg": "Contato apagado",
+  "note_delete_msg": "Nota apagada",
+  "task_delete_msg": "Tarefa apagada"
 }
 

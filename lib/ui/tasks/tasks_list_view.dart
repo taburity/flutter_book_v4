@@ -114,7 +114,7 @@ class TasksListView extends StatelessWidget {
       SnackBar(
         backgroundColor: Colors.red,
         duration: Duration(seconds: 2),
-        content: Text(l10n.delete_msg('Task')),
+        content: Text(l10n.task_delete_msg),
       ),
     );
   }

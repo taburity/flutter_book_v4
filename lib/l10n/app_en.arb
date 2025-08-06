@@ -1,9 +1,16 @@
 {
+  "greeting": "Welcome, {user}!",
   "title": "FlutterBook",
   "appt_title": "Appointments",
   "contacts_title": "Contacts",
   "notes_title": "Notes",
   "tasks_title": "Tasks",
-  "save_msg": "{item} saved",
-  "delete_msg": "{item} deleted"
+  "appt_save_msg": "Appointment saved",
+  "contact_save_msg": "Contact saved",
+  "note_save_msg": "Note saved",
+  "task_save_msg": "Task saved",
+  "appt_delete_msg": "Appointment deleted",
+  "contact_delete_msg": "Contact deleted",
+  "note_delete_msg": "Note deleted",
+  "task_delete_msg": "Task deleted"
 }

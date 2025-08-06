@@ -84,7 +84,7 @@ class TasksEntryView extends StatelessWidget {
       SnackBar(
         backgroundColor: Colors.green,
         duration: Duration(seconds: 2),
-        content: Text(l10n.save_msg('Task')),
+        content: Text(l10n.task_save_msg),
       ),
     );
   }

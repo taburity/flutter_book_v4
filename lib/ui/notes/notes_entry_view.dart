@@ -145,7 +145,7 @@ class NotesEntryView extends StatelessWidget {
       SnackBar(
         backgroundColor: Colors.green,
         duration: Duration(seconds: 2),
-        content: Text(l10n.save_msg('Note')),
+        content: Text(l10n.note_save_msg),
       ),
     );
   }

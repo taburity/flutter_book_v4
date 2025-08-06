@@ -117,7 +117,7 @@ class AppointmentsEntryView extends StatelessWidget {
       SnackBar(
         backgroundColor: Colors.green,
         duration: Duration(seconds: 2),
-        content: Text(l10n.save_msg('Appointment')),
+        content: Text(l10n.appt_save_msg),
       ),
     );
   }

@@ -95,6 +95,12 @@ abstract class AppLocalizations {
     Locale('pt')
   ];
 
+  /// No description provided for @greeting.
+  ///
+  /// In en, this message translates to:
+  /// **'Welcome, {user}!'**
+  String greeting(Object user);
+
   /// No description provided for @title.
   ///
   /// In en, this message translates to:
@@ -125,17 +131,53 @@ abstract class AppLocalizations {
   /// **'Tasks'**
   String get tasks_title;
 
-  /// No description provided for @save_msg.
+  /// No description provided for @appt_save_msg.
   ///
   /// In en, this message translates to:
-  /// **'{item} saved'**
-  String save_msg(Object item);
+  /// **'Appointment saved'**
+  String get appt_save_msg;
 
-  /// No description provided for @delete_msg.
+  /// No description provided for @contact_save_msg.
   ///
   /// In en, this message translates to:
-  /// **'{item} deleted'**
-  String delete_msg(Object item);
+  /// **'Contact saved'**
+  String get contact_save_msg;
+
+  /// No description provided for @note_save_msg.
+  ///
+  /// In en, this message translates to:
+  /// **'Note saved'**
+  String get note_save_msg;
+
+  /// No description provided for @task_save_msg.
+  ///
+  /// In en, this message translates to:
+  /// **'Task saved'**
+  String get task_save_msg;
+
+  /// No description provided for @appt_delete_msg.
+  ///
+  /// In en, this message translates to:
+  /// **'Appointment deleted'**
+  String get appt_delete_msg;
+
+  /// No description provided for @contact_delete_msg.
+  ///
+  /// In en, this message translates to:
+  /// **'Contact deleted'**
+  String get contact_delete_msg;
+
+  /// No description provided for @note_delete_msg.
+  ///
+  /// In en, this message translates to:
+  /// **'Note deleted'**
+  String get note_delete_msg;
+
+  /// No description provided for @task_delete_msg.
+  ///
+  /// In en, this message translates to:
+  /// **'Task deleted'**
+  String get task_delete_msg;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

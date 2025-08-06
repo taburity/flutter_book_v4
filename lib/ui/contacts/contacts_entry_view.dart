@@ -168,7 +168,7 @@ class ContactsEntryView extends StatelessWidget {
       SnackBar(
         backgroundColor: Colors.green,
         duration: Duration(seconds: 2),
-        content: Text(l10n.save_msg('Contact')),
+        content: Text(l10n.contact_save_msg),
       ),
     );
   }

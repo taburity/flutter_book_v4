@@ -94,7 +94,7 @@ class NotesListView extends StatelessWidget {
       SnackBar(
         backgroundColor: Colors.red,
         duration: Duration(seconds: 2),
-        content: Text(l10n.delete_msg('Note')),
+        content: Text(l10n.note_delete_msg),
       ),
     );
   }

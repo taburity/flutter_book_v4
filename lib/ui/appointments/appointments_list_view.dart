@@ -164,7 +164,7 @@ class AppointmentsListView extends StatelessWidget {
       SnackBar(
         backgroundColor: Colors.red,
         duration: Duration(seconds: 2),
-        content: Text(l10n.delete_msg('Appointment')),
+        content: Text(l10n.appt_delete_msg),
       ),
     );
   }
