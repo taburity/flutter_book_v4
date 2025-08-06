@@ -40,6 +40,15 @@ class FlutterBook extends StatelessWidget {
           Locale('en', ''),
           Locale('pt', 'BR'),
         ],
+        localeResolutionCallback: (locale, supportedLocales){
+          for(var sl in supportedLocales){
+            if(sl.languageCode == locale!.languageCode &&
+                sl.languageCode==locale.languageCode){
+              return locale;
+            }
+          }
+          return supportedLocales.first;
+        },
         // locale: const Locale('en'),
         locale: const Locale('pt', 'BR'),
         home : Builder(
